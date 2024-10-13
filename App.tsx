@@ -42,6 +42,15 @@ export default function App() {
     }
     return result;
   };
+
+  const resetPasswordState = () => {
+    setPassword('');
+    setisPassGenerate(false);
+    setlowerCase(true);
+    setupperCase(false);
+    setnumber(false);
+    setsymbols(false);
+  };
   return (
     <View>
       <Text>Password Generator</Text>
